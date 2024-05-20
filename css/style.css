@@ -1,0 +1,126 @@
+.secao-main {
+    height: 100vh;
+    background: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    display: flex;
+}
+
+.texto {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+
+.texto h1 {
+    font-size: 50px;
+}
+
+.texto h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.form {
+    width: 540px;
+    height: 650px;
+    background-color: whitesmoke;
+    margin: auto 50px;
+}
+
+.form input, textarea {
+    margin: 15px 30px 10px 30px;
+    width: 480px;
+    height: 50px;
+    font-size: large;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.form textarea {
+    font-family: Arial, sans-serif;
+    margin: 15px 30px 5px 30px;
+    height: 150px;
+}
+
+.form button {
+    margin: 15px 30px;
+    width: 480px;
+    height: 50px;
+    background-color: #00C22B;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #00C55B;
+}
+
+.h5-Obrigatorio {
+    margin-left: 30px;
+    color: red;
+    opacity: 0;
+}
+
+.campo-obrigatorio {
+    opacity: 1;
+}
+
+@media (max-width:1000px) {
+    .secao-main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .form {
+        width: 540px;
+        height: 570px;
+        background-color: whitesmoke;
+    }    
+}
+
+@media (max-width:544px) {
+    .secao-main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto {
+        margin: 30px 50px;
+    }
+
+    .texto h1 {
+        font-size: 32px;
+    }
+    
+    .texto h3 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    .form {
+        width: 350px;
+        height: 415px;
+    }    
+
+    .form input, textarea {
+        margin: 10px 30px 10px 30px;
+        width: 300px;
+    }
+
+    .form textarea {
+        height: 70px;
+    }
+    
+    .form button {
+        margin: 3px 30px;
+        width: 300px;
+        height: 40px;
+    }
+}
